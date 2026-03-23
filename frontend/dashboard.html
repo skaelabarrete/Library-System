@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library System</title>
+    <title>Library System - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-    window.location.href = '/login.html';
-</script>
-</body>
-</html>        <div class="dashboard-header">
-            <h2 id="dashboard-title"></h2>
-            <button class="btn secondary" onclick="logout()">Logout</button>
-        </div>
-
-        <div class="actions">
+<nav class="navbar">
+    <div class="container navbar-inner">
+        <h1 class="logo">Library System</h1>
+        <div id="nav-user" class="nav-user">Guest</div>
+        <button id="nav-logout" class="btn secondary" onclick="logout()">Logout</button>
+    </div>
+</nav>
+<div class="container">
+    <div class="card">
+        <div class="dashboard-header">
+            <h2 id="dashboard-title">Dashboard</h2>
             <button class="btn" onclick="displayBooks()">Refresh Books</button>
-            <button class="btn" onclick="toggleAdminPanel()" id="admin-panel-btn">Admin Panel</button>
-        </div>
-
-        <div id="admin-panel" class="hidden admin-panel">
-            <h3>Admin Actions</h3>
-            <button class="btn small" onclick="addDummyBook()">Add Dummy Book</button>
         </div>
 
         <div class="table-container">
@@ -44,7 +40,7 @@
         </div>
     </div>
 </div>
-
 <script src="script.js"></script>
+<script>initDashboardPage();</script>
 </body>
 </html>

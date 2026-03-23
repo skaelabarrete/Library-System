@@ -1,3 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #2f80ed, #56ccf2);
+    color: white;
+    padding: 12px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.nav-user {
+    font-weight: 600;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    margin: 16px 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.book-table th, .book-table td {
+    padding: 11px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+.book-table th {
+    background: #f7faff;
+    color: #1f3f75;
+    font-weight: 700;
+}
+
+.book-table tr:nth-child(even) {
+    background: #fafcff;
+}
+
+.badge {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.available {
+    background: #e3f9e5;
+    color: #1b7a31;
+}
+
+.unavailable {
+    background: #fce3e3;
+    color: #981b1b;
+}
+
+.failed {
+    background: #fdf1e0;
+    color: #9f5c00;
+}
+
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #2f80ed;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover { background: #1f6fd8; }
+
+.btn.secondary {
+    background: #617d98;
+}
+
+.btn.small {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+}
+
+.book-list-item {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 12px;
+    background: #fcfcfc;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+}
+
+.book-details {
+    display: grid;
+    gap: 4px;
+}
+
+.status {
+    font-weight: 600;
+}
+
+.admin-panel {
+    margin-bottom: 14px;
 }
